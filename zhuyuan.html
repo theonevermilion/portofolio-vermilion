@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhu Yuan UI Design</title>
+    <link rel="shortcut icon" href="../../images/letter-n 1.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styleModeloSerie.css">
+</head>
+
+<body>
+    <!-- <div id="imgModal" class="img-modal">
+        <span class="img-close" onclick="closeImage()">&times;</span>
+            <img id="imgPreview">
+    </div> -->
+    <main class="container-geral">
+        <section class="conteudo-img">
+            <section>
+                <img src="../../images/zhuyuan-gradient.png" alt="Zhu Yuan UI Design" class="img-fundo-serie">
+            </section>
+
+            <div class="icone-inicio">
+                <a href="../../series.html"><img src="../../images/remove.svg" alt="Remover" class="icone"></a>
+            </div>
+
+            <div class="icones-meio">
+                <a href="#" class="link"><img src="../../images/play.svg" onclick="openImage(this)" alt="Assistir" class="icone-play"> See</a>
+                <img src="../../images/add.svg" alt="Adicionar" class="icone">
+                <img src="../../images/like.svg" alt="Curtir" class="icone">
+            </div>
+
+            <div class="icone-fim">
+                <img src="../../images/speaker 1.svg" alt="Alto-falante" class="icone">
+            </div>
+        </section>
+
+        <section class="modelo-serie">
+            <section class="conteudo1">
+                <div>
+                    <p><span class="span-verde">Adobe Illustrator</span> 2025 1 Page <span class="span-italico">HD</span> . . </p>
+                </div>
+                <div class="classificacao">
+                    <p><span class="span-A12"><strong>9.0/10</strong></span></p>
+                    <p> Great</p>
+                </div>
+                <div>
+                    <p class="conteudo-destaque"><strong>Top 12 Design by Vermilion</strong></p>
+                </div>
+                <div>
+                    <p>I have a few designs I’d like to show you. I wouldn’t call them great, but I’m happy with the final result :D</p>
+                </div>
+            </section>
+
+            <section class="conteudo2">
+                <div>
+                    <p><span class="span-texto-cinza">Creator:</span> Raffly Herdiansyah A.K.A Vermilion</p>
+                </div>
+                <div>
+                    <p><span class="span-texto-cinza">Inspired:</span> Pinterest</p>
+                </div>
+                <div>
+                    <p><span class="span-texto-cinza"> Design Type:</span> UI Design</p>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section class="perfil-usuario">
+                <h2>Fake Appreciation</h2>
+                <section class="avaliacao-usuario">
+                    <div class="usuario">
+                        <img src="../../images/perfil 1.svg" alt="icone-usuario" class="icone-usuario">
+                        <h4>Carlos Silva ★ ★ </h4>
+                    </div>
+                    <div>
+                        <p class="comentario-usuario">A série é incrível! Fiquei completamente envolvido com a trama desde o primeiro episódio. Mal posso esperar pela próxima temporada!</p>
+                        <br>
+                        <p class="gostos-usuario">Avaliação da série <strong>Avatar: O Último Mestre do A</strong></p>
+                    </div>
+                </section>
+
+                <section class="avaliacao-usuario">
+                    <div class="usuario">
+                        <img src="../../images/perfil 1.svg" alt="icone-usuario" class="icone-usuario">
+                        <h4>Marina Oliveira ★ ★ ★</h4>
+                    </div>
+
+                    <div>
+                        <p class="comentario-usuario">O Último Mestre do Ar é mais do que uma série para mim. É um refúgio em um mundo agitado, uma fonte de conforto e inspiração. Cada episódio é uma aventura que me leva para longe dos meus problemas e me faz acreditar em um futuro melhor.</p>
+                        <br>
+                        <p class="gostos-usuario">Avaliação da série <strong>Avatar: O Último Mestre do A</strong></p>
+                    </div>
+                </section>
+            </section>
+
+            <section class="formulario-avaliacao">
+                <form id="form-avaliacao">
+                    <p class="conteudo-destaque"><strong>Deixe sua avaliação sobre a série:</strong></p>
+                    <textarea id="texto-avaliacao" placeholder="Escreva sua avaliação aqui..." required></textarea>
+                    <button type="submit">Enviar Avaliação</button>
+                </form>
+            </section>
+        </section>
+
+        <section class="informacoes-serie">
+            <div>
+                <p class="conteudo-destaque"><strong>Sobre Avatar: O Último Mestre do Ar</strong></p>
+            </div>
+            <div>
+                <p><span class="span-texto-cinza">Elenco:</span> Gordon Cormier, Kiawentiio, lan Ousley, Dallas Liu, Paul Sun-Hyung Lee, Ken Leung, Daniel Dae Kim </p>
+            </div>
+            <div>
+                <p><span class="span-texto-cinza">Gêneros:</span> Séries para a família toda, Épicos, Séries de ação e aventura, Séries dos EUA, Séries de fantasia</p>
+            </div>
+            <div>
+                <p><span class="span-texto-cinza">Cenas e momentos:</span> Engenhosos</p>
+            </div>
+            <div>
+                <p><span class="span-texto-cinza">Classificação etária:</span> <span class="span-A12"><strong>A12</strong></span> violência Não recomendado para menores de 12 anos</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+function openImage(img) {
+  const modal = document.getElementById("imgModal");
+  const preview = document.getElementById("imgPreview");
+
+  modal.style.display = "flex";
+  preview.src = img.src;
+}
+
+function closeImage() {
+  document.getElementById("imgModal").style.display = "none";
+}
+</script>
+<script>
+window.onclick = function(e) {
+  const modal = document.getElementById("imgModal");
+  if (e.target === modal) {
+    closeImage();
+  }
+}
+</script>
+</html>
